@@ -14,5 +14,6 @@
     <string name="page1">page1</string>
     <string name="page2">page2</string>
     <string name="page3">page3</string>
+    <string name="customstyle">3.自定义style属性等</string>
     
 </resources>
