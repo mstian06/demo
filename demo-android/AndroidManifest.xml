@@ -30,6 +30,20 @@
                 <category android:name="com.example.demo.intent.category.ITEM" />
             </intent-filter>
         </activity>
+        <activity 
+            android:name="com.example.demo.tabexample.MainActivity"
+            android:label="@string/tabexample" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.example.demo.intent.category.ITEM"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.demo.tabexample.activitygroup.GroupActivity" />
+        <activity android:name="com.example.demo.tabexample.activitygroup.GroupActivitySub1" />
+        <activity android:name="com.example.demo.tabexample.activitygroup.GroupActivitySub2" />
+        <activity android:name="com.example.demo.tabexample.activitygroup.GroupActivitySub3" />
+        <activity android:name="com.example.demo.tabexample.tabhost.TabHostActivity" />
+        <activity android:name="com.example.demo.tabexample.fragment.FragmentTabActivity" />
     </application>
 
 </manifest>
