@@ -52,6 +52,14 @@
                 <category android:name="com.example.demo.intent.category.ITEM"/>
             </intent-filter>
         </activity>
+        <activity 
+            android:name="com.example.demo.butterknife.ButterknifeActivity"
+            android:label="@string/butterknife">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.example.demo.intent.category.ITEM"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

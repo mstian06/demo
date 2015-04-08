@@ -15,5 +15,6 @@
     <string name="page2">page2</string>
     <string name="page3">page3</string>
     <string name="customstyle">3.自定义style属性等</string>
+    <string name="butterknife">4.butterknife使用</string>
     
 </resources>
