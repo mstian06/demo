@@ -1,4 +1,4 @@
-package com.example.demo.custom.view;
+package com.example.demo.customview;
 
 import android.view.View.MeasureSpec;
 

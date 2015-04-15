@@ -1,26 +1,23 @@
-package com.example.demo.custom.view;
+package com.example.demo.customview;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.view.View.MeasureSpec;
-import android.widget.TextView;
+import android.widget.LinearLayout;
 
 /**
  * 
  * @author tianmaosheng
  * @since 2015-2-15
  */
-public class CustomTextView extends TextView {
+public class CustomLinearLayout extends LinearLayout {
 
     /**
      * @param context
-     * @param attrs
-     * @param defStyle
      */
-    public CustomTextView(Context context, AttributeSet attrs, int defStyle) {
-        super(context, attrs, defStyle);
+    public CustomLinearLayout(Context context) {
+        super(context);
         // TODO Auto-generated constructor stub
     }
 
@@ -28,21 +25,33 @@ public class CustomTextView extends TextView {
      * @param context
      * @param attrs
      */
-    public CustomTextView(Context context, AttributeSet attrs) {
+    public CustomLinearLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         // TODO Auto-generated constructor stub
     }
 
     /**
      * @param context
+     * @param attrs
+     * @param defStyle
      */
-    public CustomTextView(Context context) {
-        super(context);
+    public CustomLinearLayout(Context context, AttributeSet attrs, int defStyle) {
+        super(context, attrs, defStyle);
         // TODO Auto-generated constructor stub
     }
 
     /* (non-Javadoc)
-     * @see android.widget.TextView#onDraw(android.graphics.Canvas)
+     * @see android.view.View#draw(android.graphics.Canvas)
+     */
+    
+    @Override
+    public void draw(Canvas canvas) {
+        // TODO Auto-generated method stub
+        super.draw(canvas);
+    }
+    
+    /* (non-Javadoc)
+     * @see android.widget.LinearLayout#onDraw(android.graphics.Canvas)
      */
     @Override
     protected void onDraw(Canvas canvas) {
@@ -51,31 +60,29 @@ public class CustomTextView extends TextView {
     }
     
     /* (non-Javadoc)
-     * @see android.widget.TextView#onLayout(boolean, int, int, int, int)
-     */
-    @Override
-    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
-        // TODO Auto-generated method stub
-        super.onLayout(changed, left, top, right, bottom);
-    }
-    
-    /* (non-Javadoc)
-     * @see android.widget.TextView#onMeasure(int, int)
+     * @see android.widget.LinearLayout#onMeasure(int, int)
      */
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         // TODO Auto-generated method stub
-        Log.e("TMS===", "CustomTextView:widthMeasureSpec=" 
+        Log.e("TMS===", "CustomLinearLayout:widthMeasureSpec=" 
                 + Util.getMeasureSpecDec(MeasureSpec.getMode(widthMeasureSpec)) + ", " 
                 + (MeasureSpec.getSize(widthMeasureSpec))
                 + " heightMeasureSpec=" 
                 + Util.getMeasureSpecDec(MeasureSpec.getMode(heightMeasureSpec)) + ", " 
                 + (MeasureSpec.getSize(heightMeasureSpec)));
-        
-//        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        // 下面是view中的默认处理方法，textview的onMeasur对Mode=AT_MOST时有做处理，所以效果不同，可以对比一下。
-        setMeasuredDimension(MeasureSpec.getSize(widthMeasureSpec), MeasureSpec.getSize(heightMeasureSpec));
-//        setMeasuredDimension(widthMeasureSpec, heightMeasureSpec);//错误的使用方法，set的时候应该不含有mode。
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+    }
+    
+    /* (non-Javadoc)
+     * @see android.widget.LinearLayout#onLayout(boolean, int, int, int, int)
+     */
+    @Override
+    protected void onLayout(boolean changed, int l, int t, int r, int b) {
+        // TODO Auto-generated method stub
+        Log.e("TMS===", "CustomLinearLayout:onLayout,l="+l+",t="+t+",r="+r+",b="+b); 
+//        super.onLayout(changed, l+r/2, t+b/2, r/2, b/2);
+        super.onLayout(changed, l, t, r, b);
     }
     
     /* (non-Javadoc)
@@ -86,6 +93,5 @@ public class CustomTextView extends TextView {
         // TODO Auto-generated method stub
         super.requestLayout();
     }
-    
     
 }

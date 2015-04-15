@@ -22,14 +22,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <!-- 1.自定义view，测试measure-layout过程 -->
         <activity 
-            android:name="com.example.demo.custom.view.ActivityTest"
+            android:name="com.example.demo.customview.ActivityTest"
             android:label="@string/customview">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.example.demo.intent.category.ITEM" />
             </intent-filter>
         </activity>
+        
+        <!-- 2.三种Tab的例子 -->
         <activity 
             android:name="com.example.demo.tabexample.MainActivity"
             android:label="@string/tabexample" >
@@ -44,6 +48,8 @@
         <activity android:name="com.example.demo.tabexample.activitygroup.GroupActivitySub3" />
         <activity android:name="com.example.demo.tabexample.tabhost.TabHostActivity" />
         <activity android:name="com.example.demo.tabexample.fragment.FragmentTabActivity" />
+        
+        <!-- 3.自定义style属性等 -->
         <activity 
             android:name="com.example.demo.customstyle.MainActivity"
             android:label="@string/customstyle">
@@ -52,6 +58,8 @@
                 <category android:name="com.example.demo.intent.category.ITEM"/>
             </intent-filter>
         </activity>
+        
+        <!-- 4.butterknife使用 -->
         <activity 
             android:name="com.example.demo.butterknife.ButterknifeActivity"
             android:label="@string/butterknife">

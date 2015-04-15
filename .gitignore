@@ -25,6 +25,8 @@ proguard/
 # Log Files
 *.log
 
+# Butterknife generate file.
+.apt_generated
 
 ######optional
 # Draft

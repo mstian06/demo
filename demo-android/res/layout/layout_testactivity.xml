@@ -5,7 +5,7 @@
     android:orientation="vertical" >
     
 
-    <com.example.demo.custom.view.CustomLinearLayout
+    <com.example.demo.customview.CustomLinearLayout
         android:id="@+id/layout"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -13,14 +13,14 @@
         android:orientation="vertical"
         >
         
-        <com.example.demo.custom.view.CustomView 
+        <com.example.demo.customview.CustomView 
             android:id="@+id/customview"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:visibility="visible"
             />
         
-        <com.example.demo.custom.view.CustomTextView 
+        <com.example.demo.customview.CustomTextView 
             android:id="@+id/textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
