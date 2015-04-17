@@ -1,5 +1,11 @@
-TabExample
-=====
+# TabExample
+---
+- com.example.demo.tabexample.activitygroup： ActivityGroup，将pager的Activiy DecorView`win.getDecorView`作为子view添加到主Activity中。
+- com.example.demo.tabexample.tabhost： ActivityGroup配合TabHost使用，TabHost，TabWidget。
+- com.example.demo.tabexample.fragment： Framelayout中添加fragment，配合FragmentManager使用。
+- com.example.demo.tabexample.fragment2： 与上面的区别是继承了FragmentActivity。
+- com.example.demo.tabexample.viewpager： 使用ViewPager配合view来使用
+- com.example.demo.tabexample.viewpagerfragment： 使用ViewPager配合Fragment来使用。
 
 ##参考
 * [Android Fragment应用实战，使用碎片向ActivityGroup说再见](http://blog.csdn.net/guolin_blog/article/details/13171191)</p>

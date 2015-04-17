@@ -25,6 +25,16 @@ import com.example.demo.R;
  * onCreate()、onCreateView()等方法都会重新执行一遍。这显然不是我们想要的，也和ActivityGroup的工作原理不符，
  * 因此最好的解决方案就是使用hide()和show()方法来隐藏和显示Fragment，这就不会让Fragment的生命周期重走一遍了。
  * 
+ * [说明] 这里继承自Activity和FragmentActivity的区别。。。。。
+ * 1. FragmentActivity  是android-support-v4.jar,jar包里面的类.为了兼容低版本.是activiity的子类.
+ *      操作fragment的一些方法，其功能跟3.0及以后的版本的Activity的功能一样
+ *      fragmentactivity 继承自activity，用来解决android3.0 之前没有fragment的api
+ * 2. 当然3.0之后你就可以直接继承自Activity，并且在其中嵌入使用fragment了。 
+ * 3. 获得Manager的方式也不同 
+ *      3.0以下：getSupportFragmentManager() 
+ *      3.0以上：getFragmentManager() 
+ * 如果不考虑兼容,不考虑fragment的话,就直接用activity.
+ * 
  * @author tianmaosheng
  * @since 2015-3-23
  */

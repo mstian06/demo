@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
         
-        <!-- 2.三种Tab的例子 -->
+        <!-- 2.Tab的例子 -->
         <activity 
             android:name="com.example.demo.tabexample.MainActivity"
             android:label="@string/tabexample" >
@@ -48,6 +48,9 @@
         <activity android:name="com.example.demo.tabexample.activitygroup.GroupActivitySub3" />
         <activity android:name="com.example.demo.tabexample.tabhost.TabHostActivity" />
         <activity android:name="com.example.demo.tabexample.fragment.FragmentTabActivity" />
+        <activity android:name="com.example.demo.tabexample.viewpager.ViewPagerMainActivity"/>
+        <activity android:name="com.example.demo.tabexample.fragment2.Fragment2MainActivity"/>
+        <activity android:name="com.example.demo.tabexample.viewpagerfragment.ViewPagerFragmentMainActivity" />
         
         <!-- 3.自定义style属性等 -->
         <activity 
