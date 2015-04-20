@@ -13,7 +13,8 @@ public class CustomTextView extends TextView {
     private static final String TAG = CustomTextView.class.getSimpleName();
 
     public CustomTextView(Context context) {
-        super(context);
+//        super(context);
+        this(context, null);
     }
 
     public CustomTextView(Context context, AttributeSet attrs) {
@@ -23,16 +24,18 @@ public class CustomTextView extends TextView {
     public CustomTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.Customize, defStyle,
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.Customize, defStyle, /*0*/
                 R.style.DefaultCustomizeStyle);
         String one = a.getString(R.styleable.Customize_attr_one);
         String two = a.getString(R.styleable.Customize_attr_two);
         String three = a.getString(R.styleable.Customize_attr_three);
         String four = a.getString(R.styleable.Customize_attr_four);
+        String five = a.getString(R.styleable.Customize_attr_five);
         Log.i(TAG, "one:" + one);
         Log.i(TAG, "two:" + two);
         Log.i(TAG, "three:" + three);
         Log.i(TAG, "four:" + four);
+        Log.i(TAG, "five:" + five);
         a.recycle();
     }
 }

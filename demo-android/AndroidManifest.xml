@@ -57,7 +57,7 @@
         <!-- 3.自定义style属性等 -->
         <activity 
             android:name="com.example.demo.customstyle.MainActivity"
-            android:label="@string/customstyle">
+            android:label="@string/customstyle" >
             <intent-filter >
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="com.example.demo.intent.category.ITEM"/>

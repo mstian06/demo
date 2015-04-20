@@ -6,6 +6,7 @@
         <attr name="attr_two" format="string" />
         <attr name="attr_three" format="string" />
         <attr name="attr_four" format="string" />
+        <attr name="attr_five" format="string" />
     </declare-styleable>
 
     <attr name="CustomizeStyle" format="reference" />
