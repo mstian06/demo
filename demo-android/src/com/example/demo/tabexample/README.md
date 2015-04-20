@@ -4,8 +4,9 @@
 - com.example.demo.tabexample.tabhost： ActivityGroup配合TabHost使用，TabHost，TabWidget。
 - com.example.demo.tabexample.fragment： Framelayout中添加fragment，配合FragmentManager使用。
 - com.example.demo.tabexample.fragment2： 与上面的区别是继承了FragmentActivity。
-- com.example.demo.tabexample.viewpager： 使用ViewPager配合view来使用
-- com.example.demo.tabexample.viewpagerfragment： 使用ViewPager配合Fragment来使用。
+- com.example.demo.tabexample.viewpager： 使用ViewPager配合PagerAdapter来使用，Adapter里面的iten是view。
+- com.example.demo.tabexample.viewpagerfragment： 使用ViewPager配合FragmentPagerAdapter来使用，Adapter里面的item是Fragment。
+- com.example.demo.tabexample.ViewPagerIndicator：使用ViewPagerIndicator实现tab样式，构建的时候要引用ViewPagerIndicator开源库，support-v4.jar包的版本要保持一致。
 
 ##参考
 * [Android Fragment应用实战，使用碎片向ActivityGroup说再见](http://blog.csdn.net/guolin_blog/article/details/13171191)</p>

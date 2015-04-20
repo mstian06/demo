@@ -7,7 +7,7 @@
     
     
     <string name="customview">1.自定义view，测试measure-layout过程</string>
-    <string name="tabexample">2.三种Tab的例子</string>
+    <string name="tabexample">2.Tab例子</string>
     <string name="tab1">Tab1</string>
     <string name="tab2">Tab2</string>
     <string name="tab3">Tab3</string>

@@ -51,6 +51,8 @@
         <activity android:name="com.example.demo.tabexample.viewpager.ViewPagerMainActivity"/>
         <activity android:name="com.example.demo.tabexample.fragment2.Fragment2MainActivity"/>
         <activity android:name="com.example.demo.tabexample.viewpagerfragment.ViewPagerFragmentMainActivity" />
+        <activity android:name="com.example.demo.tabexample.ViewPagerIndicator.SampleTabsDefault"
+            android:theme="@style/Theme.PageIndicatorDefaults" />
         
         <!-- 3.自定义style属性等 -->
         <activity 

@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.demo.R;
+import com.example.demo.tabexample.ViewPagerIndicator.SampleTabsDefault;
 import com.example.demo.tabexample.activitygroup.GroupActivity;
 import com.example.demo.tabexample.fragment.FragmentTabActivity;
 import com.example.demo.tabexample.fragment2.Fragment2MainActivity;
@@ -25,7 +26,7 @@ import com.example.demo.tabexample.viewpagerfragment.ViewPagerFragmentMainActivi
 public class MainActivity extends Activity implements OnItemClickListener {
     
     private final String items[] = {"Acitivty Group", "Tabhost", "Fragment", "Fragment2", 
-            "ViewPager", "ViewPagerFragment"};
+            "ViewPager", "ViewPagerFragment", "ViewPagerIndicators"};
     
     public ListView listView;
     
@@ -87,6 +88,10 @@ public class MainActivity extends Activity implements OnItemClickListener {
             }
             case 5: {
                 intent = new Intent(MainActivity.this, ViewPagerFragmentMainActivity.class);
+                break;
+            }
+            case 6: {
+                intent = new Intent(MainActivity.this, SampleTabsDefault.class);
                 break;
             }
             default:
